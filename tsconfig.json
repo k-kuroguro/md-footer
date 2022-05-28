@@ -1,12 +1,12 @@
 {
    "compilerOptions": {
-      "target": "ESNext",
-      "module": "CommonJS",
-      "moduleResolution": "Node",
+      "target": "esnext",
+      "module": "commonjs",
+      "moduleResolution": "node",
       "esModuleInterop": true,
       "strict": true,
       "lib": [
-         "ESNext"
+         "esnext"
       ],
       "types": [
          "node",
