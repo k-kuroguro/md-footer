@@ -8,9 +8,6 @@
    "main": "dist/index.js",
    "module": "dist/esm/index.js",
    "types": "dist/esm/index.d.ts",
-   "bin": {
-      "md-footer": "dist/bin/index.js"
-   },
    "files": [
       "dist"
    ],
@@ -25,7 +22,9 @@
       "lint": "eslint src --ext ts",
       "test": "jest"
    },
-   "keywords": [],
+   "keywords": [
+      "markdown"
+   ],
    "author": "Riku Kanayama (k_kuroguro)",
    "license": "MIT",
    "homepage": "https://github.com/k-kuroguro/md-footer/blob/master/README.md",
