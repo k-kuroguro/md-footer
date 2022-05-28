@@ -1,13 +1,30 @@
-import { hello } from '../index';
+import * as path from 'path';
+import * as fs from 'fs';
 
-describe('Test hello()', () => {
-   it('Output "Hello."', () => {
-      const log = jest.spyOn(console, 'log').mockReturnValue();
+import { generateLinks } from '../index';
 
-      hello();
+describe('Links Generation Test', () => {
+   const testFileCount = (() => {
+      let index = 0;
+      while (true) {
+         try {
+            fs.readFileSync(path.join(__dirname, 'test.md', `test${index}.in`));
+            index++;
+         } catch {
+            break;
+         }
+      }
+      return index;
+   })();
 
-      expect(log).toHaveBeenNthCalledWith(1, 'Hello.');
+   const normalize = (text: string): string => text.replace(/\r\n/g, '\n');
 
-      log.mockRestore();
-   });
+   for (let i = 0; i < testFileCount; i++) {
+      it(`Convert test${i}`, () => {
+         const input = fs.readFileSync(path.join(__dirname, 'test.md', `test${i}.in`)).toString();
+         const expectOutput = normalize(fs.readFileSync(path.join(__dirname, 'test.md', `test${i}.out`)).toString());
+         const output = normalize(generateLinks(input));
+         expect(output).toStrictEqual(expectOutput);
+      });
+   }
 });
