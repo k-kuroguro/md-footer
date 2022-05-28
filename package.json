@@ -1,7 +1,7 @@
 {
    "name": "md-footer",
    "version": "1.0.0",
-   "description": "",
+   "description": "Generate markdown footer links.",
    "engines": {
       "node": ">=16"
    },
