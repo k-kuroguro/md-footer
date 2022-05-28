@@ -1,30 +1,12 @@
 # Md Footer
 
-[![CI](https://github.com/k-kuroguro/md-footer/actions/workflows/main.yaml/badge.svg)](https://github.com/k-kuroguro/md-footer/actions/workflows/main.yaml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI][1]][2]
+[![License: MIT][3]][4]
 
-# Setup
+Generate markdown footer links.
+This library is rewritten [md-footer][1] by typescript.
 
-1. Change library name in below files.
-   - `package.json`
-      - name
-      - bin
-      - homepage
-      - repository
-      - bugs
-   - `README.md`
-      - title
-      - badge of github actions
-
-2. Execute `npm i` for installing node modules and remake `package-lock.json`.
-
-# Publish
-
-1. Check if it exists same name library.
-   `npm info [library-name]`
-
-2. Login to npm.
-   `npm login`
-
-3. Publish by below command.
-   `npm publish`
+[1]:https://github.com/k-kuroguro/md-footer/actions/workflows/main.yaml/badge.svg
+[2]:https://github.com/k-kuroguro/md-footer/actions/workflows/main.yaml
+[3]:https://img.shields.io/badge/License-MIT-yellow.svg
+[4]:https://opensource.org/licenses/MIT
