@@ -14,7 +14,6 @@ $ npm i md-footer
 
 # Usage
 
-TypeScript example
 ```typescript
 import * as fs from 'fs';
 import { generateLinks } from 'md-footer';
