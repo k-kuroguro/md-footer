@@ -41,6 +41,10 @@ Output
 [2]:http://www.example.com/link2
 ```
 
+# Related
+
+ - [md-footer-cli](https://www.npmjs.com/package/md-footer-cli) - CLI for this library.
+
 [1]:https://github.com/k-kuroguro/md-footer/actions/workflows/main.yaml/badge.svg
 [2]:https://github.com/k-kuroguro/md-footer/actions/workflows/main.yaml
 [3]:https://img.shields.io/badge/License-MIT-yellow.svg
